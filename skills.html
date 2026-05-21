@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills – Shofiyatul Nur Ghilbah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="page-header-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="container">
+      <h1 class="page-title"><span>Skills</span></h1>
+      <p class="page-subtitle">Kemampuan yang terus saya kembangkan</p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills-section section">
+    <div class="container">
+      <div class="skills-intro">
+        <p>Berikut adalah keahlian yang saya miliki dan terus saya tingkatkan setiap harinya. Setiap skill merupakan bagian dari perjalanan belajar saya.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Web Dev -->
+        <div class="skills-category">
+          <h3 class="skills-cat-title"><i class="fa-solid fa-code"></i> Web Development</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="skill-percent">25%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="25" style="--clr:#f4a7b9"></div>
+            </div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+              <span class="skill-percent">25%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="25" style="--clr:#c9b8e8"></div>
+            </div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-percent">5%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="5" style="--clr:#ffd6a5"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="skills-category">
+          <h3 class="skills-cat-title"><i class="fa-solid fa-network-wired"></i> Networking</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-solid fa-diagram-project"></i> Cisco Packet Tracer</span>
+              <span class="skill-percent">30%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="30" style="--clr:#a8d8ea"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Creative -->
+        <div class="skills-category">
+          <h3 class="skills-cat-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Creative & Productivity</h3>
+          <div class="skill-bar-wrap">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-solid fa-pen-ruler"></i> Editing (Canva, dll)</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75" style="--clr:#f4a7b9"></div>
+            </div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-solid fa-file-word"></i> Word, Excel, PowerPoint</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85" style="--clr:#b5ead7"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Shofiyatul Nur Ghilbah</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/shofiyatulng/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/whosop" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:shofiyatulnur08@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

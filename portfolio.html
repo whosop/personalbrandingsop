@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – Shofiyatul Nur Ghilbah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="page-header-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="container">
+      <h1 class="page-title"><span>Portfolio</span></h1>
+      <p class="page-subtitle">Karya dan proyek yang telah saya buat</p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio-section section">
+    <div class="container">
+
+      <div class="portfolio-grid">
+        
+        <!-- PROJECT 1: Desain Mug -->
+        <div class="portfolio-card">
+          <div class="portfolio-card-slider">
+            <div class="slider-container">
+              <img src="https://i.imgur.com/z2Eqe9j.png" alt="Desain Mug 1" class="slider-img active" />
+              <img src="https://i.imgur.com/AaTA1jr.png" alt="Desain Mug 2" class="slider-img" />
+            </div>
+            <button class="slider-btn prev" onclick="changeSlide(this, -1)">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next" onclick="changeSlide(this, 1)">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="slider-dots">
+              <span class="dot active" onclick="currentSlide(this, 0)"></span>
+              <span class="dot" onclick="currentSlide(this, 1)"></span>
+            </div>
+          </div>
+          <div class="portfolio-card-content">
+            <span class="portfolio-number">01</span>
+            <h3>Desain Mug</h3>
+            <p>Desain mug dengan konsep terinspirasi dari artis favorit, dikemas dengan gaya soft, lucu, dan aesthetic.</p>
+            <div class="portfolio-tags">
+              <span>Canva</span>
+              <span>Desain Grafis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Website Kelompok -->
+        <div class="portfolio-card">
+          <div class="portfolio-card-image">
+            <img src="https://i.imgur.com/1CVfrWj.png" alt="Website Kelompok" class="portfolio-img-main" />
+          </div>
+          <div class="portfolio-card-content">
+            <span class="portfolio-number">02</span>
+            <h3>Website Kelompok</h3>
+            <p>Website untuk mencatat progres game dan berbagi review dengan tampilan modern dan interaktif.</p>
+            <div class="portfolio-tags">
+              <span>Web Development</span>
+              <span>UI Design</span>
+            </div>
+            <a href="https://game-journal-review.page.gd/" target="_blank" class="portfolio-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Website
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Microsite Shop -->
+        <div class="portfolio-card">
+          <div class="portfolio-card-placeholder" style="background: var(--pastel-purple);">
+            <i class="fa-solid fa-store"></i>
+            <span>s.id/myshoply</span>
+          </div>
+          <div class="portfolio-card-content">
+            <span class="portfolio-number">03</span>
+            <h3>Microsite Shop</h3>
+            <p>Toko digital sederhana berbasis microsite menggunakan platform S.id yang praktis dan mudah digunakan.</p>
+            <div class="portfolio-tags">
+              <span>Microsite</span>
+              <span>Digital Store</span>
+            </div>
+            <a href="https://s.id/myshoply" target="_blank" class="portfolio-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Kunjungi Shop
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Koleksi Poster Digital -->
+        <div class="portfolio-card">
+          <div class="portfolio-card-placeholder" style="background: var(--pastel-pink);">
+            <i class="fa-brands fa-adobe"></i>
+            <span>Adobe Illustrator</span>
+          </div>
+          <div class="portfolio-card-content">
+            <span class="portfolio-number">04</span>
+            <h3>Koleksi Poster Digital</h3>
+            <p>Kumpulan desain poster dengan Adobe Illustrator, berbagai tema dan konsep visual yang menarik.</p>
+            <div class="portfolio-tags">
+              <span>Adobe Illustrator</span>
+              <span>Poster Design</span>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1I8zXnCwyi8Bahe6UKmardrZ54x_rPkcX?usp=sharing" target="_blank" class="portfolio-link">
+              <i class="fa-brands fa-google-drive"></i> Lihat Koleksi
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 5: Cisco IT Essentials -->
+        <div class="portfolio-card">
+          <div class="portfolio-card-image">
+            <img src="https://i.imgur.com/gfG8npO.png" alt="Sertifikat Cisco" class="portfolio-img-main" />
+          </div>
+          <div class="portfolio-card-content">
+            <span class="portfolio-number">05</span>
+            <h3>Cisco IT Essentials</h3>
+            <p>Sertifikat Cisco IT Essentials yang menunjukkan pemahaman dasar tentang hardware komputer, sistem operasi, dan troubleshooting.</p>
+            <div class="portfolio-tags">
+              <span>Cisco</span>
+              <span>IT Essentials</span>
+              <span>Networking</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1KPtlIdOKPX84cve8OvGwLY5DsWolbLaf/view?usp=drive_link" target="_blank" class="portfolio-link">
+              <i class="fa-brands fa-google-drive"></i> Lihat Sertifikat
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 6: Website Sejarah Reformasi -->
+        <div class="portfolio-card">
+          <div class="portfolio-card-image">
+            <img src="sejarah.png" alt="Website Sejarah Reformasi" class="portfolio-img-main" />
+          </div>
+          <div class="portfolio-card-content">
+            <span class="portfolio-number">06</span>
+            <h3>Website Sejarah Reformasi Indonesia</h3>
+            <p>Website edukatif tentang sejarah reformasi Indonesia dengan tampilan informatif dan mudah dipahami.</p>
+            <div class="portfolio-tags">
+              <span>Web Development</span>
+              <span>Sejarah</span>
+              <span>Edukatif</span>
+            </div>
+            <a href="https://wisnunakima.github.io/Website-Sejarah/" target="_blank" class="portfolio-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Website
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 7: Website Fungsi Komposisi -->
+        <div class="portfolio-card">
+          <div class="portfolio-card-image">
+            <img src="mat.png" alt="Website Fungsi Komposisi" class="portfolio-img-main" />
+          </div>
+          <div class="portfolio-card-content">
+            <span class="portfolio-number">07</span>
+            <h3>Website Fungsi Komposisi</h3>
+            <p>Website pembelajaran matematika tentang fungsi komposisi dengan interface yang interaktif dan user-friendly.</p>
+            <div class="portfolio-tags">
+              <span>Web Development</span>
+              <span>Matematika</span>
+              <span>Edukatif</span>
+            </div>
+            <a href="https://whosop.github.io/komposisifungsi/home.html" target="_blank" class="portfolio-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Website
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Shofiyatul Nur Ghilbah</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/shofiyatulng/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/whosop" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:shofiyatulnur08@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
